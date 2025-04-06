@@ -1,0 +1,21 @@
+- name: khan-math
+  start_urls: 
+    - "https://www.khanacademy.org/math"
+  allowed_domains: 
+    - "khanacademy.org"
+  include_patterns:
+    - "/math/"
+  exclude_patterns:
+    - "quiz"
+    - "test"
+    - "login"
+  max_depth: 2
+
+- name: wikipedia-derivatives
+  start_urls:
+    - "https://en.wikipedia.org/wiki/Derivative"
+  allowed_domains:
+    - "wikipedia.org"
+  include_patterns:
+    - "/wiki/Derivative"
+  max_depth: 1
